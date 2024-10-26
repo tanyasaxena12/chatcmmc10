@@ -1,0 +1,26 @@
+
+
+#img1{
+    position: relative;
+    width:100%;
+    padding-bottom: 54.8%;
+    background-image: url('https://www.juncyber.com/wp-content/uploads/2024/09/Screenshot-2024-09-05-at-12.23.32%E2%80%AFPM.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#img1-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,25 @@
+
+df-messenger {
+  z-index: 999;
+  position: relative;
+  --df-messenger-font-color: #000;
+  --df-messenger-font-family: Google Sans;
+  
+  --df-messenger-message-user-background: #d3e3fd;
+  --df-messenger-message-bot-background: #fff;
+  --df-messenger-titlebar-title-align:center;
+ --df-messenger-chat-background:#1c2024;
+/* --df-messenger-chat-background:url('bgImage.jpg') no-repeat center/cover fixed;
+ --df-messenger-chat-background-attachment:fixed;*/
+  
+  --bot-actor-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
+  /*--user-actor-image: url('/path/to/user-image.png');*/
+  bottom: 16px;
+  right: 16px;
+  height:80vh;
+}
+
+#card1{
+  background-color:#181b1e;
+}
+

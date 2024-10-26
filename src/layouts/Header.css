@@ -1,0 +1,14 @@
+#loginBtn{
+    padding:10px;
+    background-color: #16181b;
+    color: aliceblue;
+    border-radius: 10%;
+}
+
+#logoutBtn{
+    padding:10px;
+    background-color: #181c20;
+    color: aliceblue;
+    border-radius: 10%;
+}
+
