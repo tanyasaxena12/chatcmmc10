@@ -113,6 +113,10 @@ app.use(express.json());
 const credentialsPath = '/etc/secrets/accessToken.json'; // This path is where Render stores your secret file
 //const credentialsPath = './src/views/accessToken.json'; 
 
+app.get('/', (req, res) => {
+    res.send('Welcome to ChatCMMC! The backend server is up and running.');
+});
+
 app.post('/getDialogflowResponse', async (req, res) => {
     const userInput = req.body.userInput;
 
