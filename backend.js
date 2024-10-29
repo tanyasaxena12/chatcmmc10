@@ -112,6 +112,7 @@ app.use(express.json());
 // Load credentials from secret file (Render secret location)
 const credentialsPath = '/etc/secrets/accessToken.json'; // This path is where Render stores your secret file
 //const credentialsPath = './src/views/accessToken.json'; 
+
 /*
 app.get('/', (req, res) => {
     res.send('Welcome to ChatCMMC! The backend server is up and running.');
@@ -120,13 +121,12 @@ app.get('/', (req, res) => {
 const path = require('path');
 
 // Serve the static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
-// Route all unknown requests to the React app
+// Route all unknown requests to the React app's index.html
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-
 
 app.post('/getDialogflowResponse', async (req, res) => {
     const userInput = req.body.userInput;
