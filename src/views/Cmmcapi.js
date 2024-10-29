@@ -102,6 +102,7 @@ const Cmmcapi = () => {
             setInputText("");
     
             try {
+                /*
                 const response = await fetch("http://localhost:3002/getDialogflowResponse", {
                     method: 'POST',
                     headers: {
@@ -109,6 +110,15 @@ const Cmmcapi = () => {
                     },
                     body: JSON.stringify({ userInput: inputText }), // Send user input to backend
                 });
+                */
+                const response = await fetch("https://chatcmmc10-1.onrender.com/getDialogflowResponse", {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ userInput: inputText }),
+                });
+
     
                 const data = await response.json(); // Parse JSON response
     
