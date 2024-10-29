@@ -100,11 +100,19 @@ const cors = require('cors');
 const express = require('express');
 const app = express();
 const port = 3002;
-
+/*
+//LOCAL
 const corsOptions = {
     origin: 'http://localhost:3000',
     optionsSuccessStatus: 200, // Some legacy browsers choke on 204
 };
+*/
+const corsOptions = {
+    origin: 'https://chatcmmc10-1.onrender.com', // replace with your actual frontend URL
+    optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
+
 // Allow CORS and handle JSON payloads
 app.use(cors());
 app.use(express.json());
